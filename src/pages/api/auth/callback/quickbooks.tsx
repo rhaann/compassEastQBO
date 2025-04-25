@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { createQBClient, oauthClient } from '../../../../lib/quickbook';  
+import { oauthClient } from '../../../../lib/quickbook';  
 import { storeQuickBooksToken } from '../../../../lib/supabase';
 import { serialize } from 'cookie';
 

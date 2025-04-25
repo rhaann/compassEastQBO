@@ -1,8 +1,6 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 const ConnectButton: React.FC = () => {
-  const router = useRouter();
 
   const handleConnect = async () => {
     try {

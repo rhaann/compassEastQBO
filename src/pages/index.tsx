@@ -5,10 +5,9 @@ import Image from 'next/image';
 
 export default function HomePage() { 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-50 font-sans">
       <Head>
         <title>Compass East | QuickBooks Analytics</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
       </Head>
       
       {/* Main content */}
