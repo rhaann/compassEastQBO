@@ -13,6 +13,7 @@
     "cookie": "^1.0.2",
     "intuit-oauth": "^4.2.0",
     "next": "15.3.1",
+    "node-quickbooks": "^2.0.45",
     "quickbooks-sdk": "^0.15.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
