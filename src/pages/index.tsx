@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="w-full max-w-2xl text-center bg-white p-12 rounded-lg shadow-sm border border-[#4ba6de]/20">
           <div className="mb-12 flex justify-center items-center">
             <Image 
-              src="/compass_east_logo.jfif" 
+              src="/compass_east_logo.png" 
               alt="Compass East Logo" 
               width={70} 
               height={70} 
