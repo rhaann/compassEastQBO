@@ -13,11 +13,12 @@ declare module 'node-quickbooks' {
         refreshToken: string
       );
   
-      // Add only what you use — here's a basic example:
-      findAccounts?: (callback: Function) => void;
-      getCustomer?: (id: string, callback: Function) => void;
-      // or use index signature:
-      [key: string]: any;
+      // Define specific types for these functions
+      findAccounts?: (callback: (err: Error, result: any) => void) => void;
+      getCustomer?: (id: string, callback: (err: Error, result: any) => void) => void;
+  
+      // Example for a more specific function type
+      someOtherFunction?: (param1: string, param2: number) => string; // Adjust based on actual function signature
     }
   }
   
