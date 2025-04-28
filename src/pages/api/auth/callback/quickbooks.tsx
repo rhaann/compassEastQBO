@@ -34,7 +34,14 @@ export default async function handler(
     const tokens = authResponse.getJson();
     
 
-    const apiUrl = `https://sandbox-quickbooks.api.intuit.com/v3/company/${realmId}/companyinfo/${realmId}`;
+    // Determine the correct base URL
+    const isProduction = process.env.QUICKBOOKS_ENVIRONMENT === 'production';
+    const quickBooksApiBaseUrl = isProduction
+      ? 'https://quickbooks.api.intuit.com'
+      : 'https://sandbox-quickbooks.api.intuit.com'; // Keep sandbox for development
+
+    // Construct the API URL using the dynamic base URL
+    const apiUrl = `${quickBooksApiBaseUrl}/v3/company/${realmId}/companyinfo/${realmId}`;
   
     const headers = {
       'Accept': 'application/json',
